@@ -17,7 +17,7 @@ function Topbar() {
 
         <div className="d-flex align-items-center">
           <a href="#" className="nav-link me-4">Sobre</a>
-          <a href="#" className="nav-link me-2">Contacto</a>
+          <a href="#" className="nav-link me-2">Contactooooooooooo</a>
           <a href="#" className="icon-link"><i className="fa-solid fa-magnifying-glass"></i></a>
           <a href="#" className="icon-link"><i className="fa-regular fa-heart"></i></a>
           <a href="#" className="icon-link"><i className="fa-solid fa-bag-shopping"></i></a>
