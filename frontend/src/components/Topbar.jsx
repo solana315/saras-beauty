@@ -8,7 +8,7 @@ function Topbar() {
 
         <div className="d-flex gap-4">
           <a href="#" className="nav-link">Loja</a>
-          <a href="#" className="nav-link">Tutoriais</a>
+          <a href="#" className="nav-link">Tutoriaisssssssssssss</a>
         </div>
 
         <a href="#" className="brand text-center">
