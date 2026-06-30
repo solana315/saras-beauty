@@ -1,4 +1,4 @@
-import './Topbar.css';
+import '../App.css';
 import LogoHorizontal from '../assets/LogoHorizontal.png';
 
 function Topbar() {

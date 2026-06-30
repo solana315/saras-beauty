@@ -1,22 +1,24 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Topbar from './components/Topbar'
+import './App.css';
+import Topbar from './components/Topbar';
+import Hero from './components/Hero';
+import ProdutosDestaque from './components/ProdutosDestaque';
+import StoryBanner from './components/StoryBanner';
+import Novidades from './components/Novidades';
+import Tutoriais from './components/Tutoriais';
+import Footer from './components/Footer';
 
-function Home() {
-  const [apiStatus, setApiStatus] = useState('A ligar...')
-
-  useEffect(() => {
-    fetch('/api/status')
-      .then((res) => res.json())
-      .then((data) => setApiStatus(data.message))
-      .catch(() => setApiStatus('Servidor offline'))
-  }, [])
-
+function HomePage() {
   return (
-    <div className="page">
+    <div className="homepage">
       <Topbar />
+      <Hero />
+      <ProdutosDestaque />
+      <StoryBanner />
+      <Novidades />
+      <Tutoriais />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Home
+export default HomePage;

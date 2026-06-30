@@ -1,0 +1,33 @@
+import '../App.css';
+function Novidades() {
+  const produtos = [
+    { name: 'Blush Aveludado' },
+    { name: 'Lápis Olhos Ideal' },
+    { name: 'Sombras Terrosas' },
+  ];
+
+  return (
+    <section className="container section">
+      <div className="section-header">
+        <div>
+          <p className="eyebrow">Acabaram de chegar</p>
+          <h2 className="section-title">Novidades</h2>
+        </div>
+        <a href="#" className="link-ver-tudo">Ver tudo →</a>
+      </div>
+
+      <div className="row g-4">
+        {produtos.map((p) => (
+          <div className="col-12 col-md-4" key={p.name}>
+            <div className="product-card product-card-lg">
+              <div className="product-img product-img-lg" />
+              <p className="product-name">{p.name}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default Novidades;

@@ -1,0 +1,273 @@
+/*HOME -----------------------------------------------------------*/
+:root {
+  --bg-cream: #faf6f1;
+  --text-dark: #1a1a1a;
+  --text-muted: #8a8178;
+  --accent: #b08968;
+  --line: #e9e3da;
+}
+
+.homepage {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-dark);
+  background: var(--bg-cream);
+}
+
+.eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.eyebrow-light { color: #cfcfcf; }
+
+/* HERO */
+.hero {
+  height: 70vh;
+  min-height: 420px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.45)),
+              url('https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=1600') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-overlay { color: #fff; max-width: 540px; padding: 0 20px; }
+.hero-eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  opacity: 0.85;
+}
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+.btn-hero {
+  display: inline-block;
+  background: #fff;
+  color: var(--text-dark);
+  text-decoration: none;
+  padding: 12px 28px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+.btn-hero:hover { background: var(--accent); color: #fff; }
+
+/* SECTIONS */
+.section { padding: 70px 15px; }
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+.link-ver-tudo {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--text-dark);
+  padding-bottom: 2px;
+}
+
+/* PRODUCT CARDS */
+.product-card { cursor: pointer; }
+.product-img {
+  aspect-ratio: 1 / 1.1;
+  background: linear-gradient(135deg, #ede4d8, #d9c7b3);
+  border-radius: 4px;
+  margin-bottom: 14px;
+  transition: 0.3s;
+}
+.product-card:hover .product-img { opacity: 0.85; }
+.product-img-lg { aspect-ratio: 1 / 0.85; }
+.product-name { font-size: 0.9rem; font-weight: 500; margin: 0; }
+.product-cat { font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0; }
+
+/* STORY BANNER */
+.story-banner {
+  position: relative;
+  min-height: 460px;
+  background: #141414;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.story-img {
+  position: absolute;
+  inset: 0;
+  width: 55%;
+  background: url('https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=1200') center/cover no-repeat;
+}
+.story-content {
+  margin-left: 55%;
+  color: #fff;
+  padding: 40px 60px;
+  max-width: 460px;
+}
+.story-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+.story-text { font-size: 0.9rem; color: #cfcfcf; margin-bottom: 26px; line-height: 1.6; }
+.btn-outline-light {
+  display: inline-block;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 26px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.btn-outline-light:hover { background: #fff; color: #141414; }
+
+@media (max-width: 768px) {
+  .story-img { position: relative; width: 100%; height: 240px; }
+  .story-content { margin-left: 0; padding: 30px 24px; }
+  .story-banner { flex-direction: column; min-height: auto; }
+}
+
+/* TUTORIAL CARDS */
+.tutorial-card { cursor: pointer; }
+.tutorial-img {
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #f0e0d8, #d8a8a0);
+  margin-bottom: 14px;
+}
+.tutorial-title { font-size: 0.95rem; font-weight: 600; margin: 0 0 4px; }
+.tutorial-desc { font-size: 0.8rem; color: var(--text-muted); margin: 0; }
+
+/* FOOTER */
+.footer {
+  background: #141414;
+  color: #cfcfcf;
+  padding: 60px 0 30px;
+  text-align: center;
+}
+.footer-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.footer-cols h6 {
+  color: #fff;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.footer-cols a {
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+.footer-cols a:hover { color: #fff; }
+.newsletter-input { display: flex; border-bottom: 1px solid #444; }
+.newsletter-input input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 8px 0;
+  font-size: 0.85rem;
+  flex: 1;
+  outline: none;
+}
+.newsletter-input button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.footer-copy { font-size: 0.75rem; color: #777; margin: 0; }
+/*HOME -----------------------------------------------------------*/
+
+
+/*TOP BAR CSS -----------------------------------------------------------*/
+.topbar {
+  border-bottom: 1px solid #eee;
+  padding: 14px 0;
+}
+
+.topbar .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.topbar .nav-link:hover {
+  color: #555;
+}
+
+.topbar .brand {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  color: #1a1a1a;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.topbar .brand img {
+  display: block;
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 0.25rem;
+}
+
+.topbar .brand small {
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  color: #999;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.topbar .icon-link {
+  color: #1a1a1a;
+  font-size: 1rem;
+  margin-left: 18px;
+}
+/*TOP BAR CSS -----------------------------------------------------------*/
+
+
+/*FOOTER CSS -----------------------------------------------------------*/
