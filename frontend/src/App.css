@@ -103,7 +103,7 @@
 .product-cat { font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0; }
 /* PRODUCT CARDS-----------------------------------------------------------------------------------*/
 
-/* STORY BANNER */
+/* STORY BANNER------------------------------------------------------------------------------------*/
 .story-banner {
   position: relative;
   min-height: 460px;
@@ -150,8 +150,9 @@
   .story-content { margin-left: 0; padding: 30px 24px; }
   .story-banner { flex-direction: column; min-height: auto; }
 }
+/* STORY BANNER------------------------------------------------------------------------------------*/
 
-/* TUTORIAL CARDS */
+/* TUTORIAL CARDS----------------------------------------------------------------------------------*/
 .tutorial-card { cursor: pointer; }
 .tutorial-img {
   aspect-ratio: 1 / 1;
@@ -161,8 +162,63 @@
 }
 .tutorial-title { font-size: 0.95rem; font-weight: 600; margin: 0 0 4px; }
 .tutorial-desc { font-size: 0.8rem; color: var(--text-muted); margin: 0; }
+/* TUTORIAL CARDS----------------------------------------------------------------------------------*/
+/*HOME ---------------------------------------------------------------------------------------------------------------*/
 
-/* FOOTER */
+
+/*TOP BAR CSS -------------------------------------------------------------------------------------*/
+.topbar {
+  border-bottom: 1px solid #eee;
+  padding: 14px 0;
+}
+
+.topbar .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.topbar .nav-link:hover {
+  color: #555;
+}
+
+.topbar .brand {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  color: #1a1a1a;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.topbar .brand img {
+  display: block;
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 0.25rem;
+}
+
+.topbar .brand small {
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  color: #999;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.topbar .icon-link {
+  color: #1a1a1a;
+  font-size: 1rem;
+  margin-left: 18px;
+}
+/*TOP BAR CSS -------------------------------------------------------------------------------------*/
+
+/* FOOTER------------------------------------------------------------------------------------------*/
 .footer {
   background: #141414;
   color: #cfcfcf;
@@ -217,60 +273,4 @@
   cursor: pointer;
 }
 .footer-copy { font-size: 0.75rem; color: #777; margin: 0; }
-/*HOME -----------------------------------------------------------*/
-
-
-/*TOP BAR CSS -----------------------------------------------------------*/
-.topbar {
-  border-bottom: 1px solid #eee;
-  padding: 14px 0;
-}
-
-.topbar .nav-link {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #1a1a1a;
-}
-
-.topbar .nav-link:hover {
-  color: #555;
-}
-
-.topbar .brand {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem;
-  letter-spacing: 4px;
-  color: #1a1a1a;
-  text-decoration: none;
-  line-height: 1;
-}
-
-.topbar .brand img {
-  display: block;
-  max-width: 180px;
-  height: auto;
-  margin-bottom: 0.25rem;
-}
-
-.topbar .brand small {
-  display: block;
-  font-size: 0.6rem;
-  letter-spacing: 3px;
-  color: #999;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.topbar .icon-link {
-  color: #1a1a1a;
-  font-size: 1rem;
-  margin-left: 18px;
-}
-/*TOP BAR CSS -----------------------------------------------------------*/
-
-
-/*FOOTER CSS -----------------------------------------------------------*/
+/* FOOTER------------------------------------------------------------------------------------------*/
