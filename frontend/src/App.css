@@ -223,7 +223,6 @@
   background: #141414;
   color: #cfcfcf;
   padding: 60px 0 30px;
-  text-align: center;
 }
 .footer-brand {
   font-family: 'Cormorant Garamond', serif;
@@ -233,11 +232,6 @@
   margin-bottom: 40px;
 }
 .footer-cols {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-  text-align: left;
   margin-bottom: 40px;
 }
 .footer-cols h6 {
@@ -255,22 +249,23 @@
   margin-bottom: 8px;
 }
 .footer-cols a:hover { color: #fff; }
-.newsletter-input { display: flex; border-bottom: 1px solid #444; }
-.newsletter-input input {
+.footer-newsletter .input-group {
+  border-bottom: 1px solid #444;
+}
+.footer-newsletter .form-control {
   background: transparent;
   border: none;
   color: #fff;
   padding: 8px 0;
   font-size: 0.85rem;
-  flex: 1;
-  outline: none;
+  box-shadow: none;
 }
-.newsletter-input button {
-  background: none;
+.footer-newsletter .form-control:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+.footer-newsletter .btn {
   border: none;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
 }
 .footer-copy { font-size: 0.75rem; color: #777; margin: 0; }
 /* FOOTER------------------------------------------------------------------------------------------*/
