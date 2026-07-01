@@ -91,11 +91,20 @@
 /* PRODUCT CARDS-----------------------------------------------------------------------------------*/
 .product-card { cursor: pointer; }
 .product-img {
+  position: relative;
   aspect-ratio: 1 / 1.1;
   background: linear-gradient(135deg, #ede4d8, #d9c7b3);
   border-radius: 4px;
   margin-bottom: 14px;
   transition: 0.3s;
+  overflow: hidden;
+}
+.product-img img,
+.product-img-inner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .product-card:hover .product-img { opacity: 0.85; }
 .product-img-lg { aspect-ratio: 1 / 0.85; }
@@ -215,6 +224,7 @@
   color: #1a1a1a;
   font-size: 1rem;
   margin-left: 18px;
+text-decoration: none;
 }
 /*TOP BAR CSS -------------------------------------------------------------------------------------*/
 
