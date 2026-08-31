@@ -4,7 +4,7 @@ import balsamolabial from '../assets/balsamolabial.jpg';
 function StoryBanner() {
   return (
     <section className="story-banner">
-          <div
+      <div
         className="story-img"
         style={{ backgroundImage: `url(${balsamolabial})` }}
       />

@@ -121,7 +121,12 @@
   align-items: center;
   overflow: hidden;
 }
-
+.story-img {
+  position: absolute;
+  inset: 0;
+  width: 55%;
+  background: center/cover no-repeat;
+}
 .story-content {
   margin-left: 55%;
   color: #fff;
