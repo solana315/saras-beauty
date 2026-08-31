@@ -7,9 +7,9 @@ import cremeolhos from '../assets/cremeolhos.jpg';
 
 function ProdutosDestaque() {
   const produtos = [
-    { name: 'Creamy Contour', cat: 'Rosto', img: contornocremoso },
-    { name: 'Eye Cream', cat: 'Olhos', img: cremeolhos },
-    { name: 'Glow Highlighter', cat: 'Rosto', img: glowhighlighter },
+    { name: 'Creamy Contour', cat: 'Face', img: contornocremoso },
+    { name: 'Eye Cream', cat: 'Eyes', img: cremeolhos },
+    { name: 'Glow Highlighter', cat: 'Face', img: glowhighlighter },
     { name: 'Lightning Serum', cat: 'Skincare', img: serumiluminador },
   ];
 

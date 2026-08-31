@@ -5,19 +5,19 @@ import sombrasterrosas from '../assets/sombrasterrosas.jpg';
 
 function Novidades() {
   const produtos = [
-    { name: 'Blush Aveludado', img: blushaveludado},
-    { name: 'Lápis Olhos Ideal',img: lapisolhosideal },
-    { name: 'Sombras Terrosas', img: sombrasterrosas},
+    { name: 'Soft Blush', img: blushaveludado},
+    { name: 'Ideal Eye Pencil',img: lapisolhosideal },
+    { name: 'Terracotta Shadows', img: sombrasterrosas},
   ];
 
   return (
     <section className="container section">
       <div className="section-header">
         <div>
-          <p className="eyebrow">Acabaram de chegar</p>
-          <h2 className="section-title">Novidades</h2>
+          <p className="eyebrow">Just Arrived</p>
+          <h2 className="section-title">New Arrivals</h2>
         </div>
-        <a href="#" className="link-ver-tudo">Ver tudo →</a>
+        <a href="#" className="link-ver-tudo">See All →</a>
       </div>
 
       <div className="row g-4">

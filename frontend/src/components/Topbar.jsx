@@ -7,8 +7,8 @@ function Topbar() {
       <div className="container d-flex align-items-center justify-content-between">
 
         <div className="d-flex gap-4">
-          <a href="#" className="nav-link">Loja</a>
-          <a href="#" className="nav-link">Tutoriais</a>
+          <a href="#" className="nav-link">Store</a>
+          <a href="#" className="nav-link">Tutorials</a>
         </div>
 
         <a href="#" className="brand text-center">
@@ -16,8 +16,8 @@ function Topbar() {
         </a>
 
         <div className="d-flex align-items-center">
-          <a href="#" className="nav-link me-4">Sobre</a>
-          <a href="#" className="nav-link me-2">Contacto</a>
+          <a href="#" className="nav-link me-4">About</a>
+          <a href="#" className="nav-link me-2">Contact</a>
           <a href="#" className="icon-link"><i className="fa-solid fa-magnifying-glass"></i></a>
           <a href="#" className="icon-link"><i className="fa-regular fa-heart"></i></a>
           <a href="#" className="icon-link"><i className="fa-solid fa-bag-shopping"></i></a>
