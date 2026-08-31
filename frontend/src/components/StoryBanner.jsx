@@ -9,12 +9,12 @@ function StoryBanner() {
         style={{ backgroundImage: `url(${balsamolabial})` }}
       />
       <div className="story-content">
-        <p className="eyebrow eyebrow-light">A nossa missão</p>
-        <h2 className="story-title">Beleza que conta<br />a tua história</h2>
+        <p className="eyebrow eyebrow-light">Our mission</p>
+        <h2 className="story-title">Beauty that tell<br />your history</h2>
         <p className="story-text">
-          Produtos pensados para realçar quem és, sem máscaras — só a tua versão mais autêntica.
+          Products that were tought to tell who you are, without mascaras — just your most authentic version.
         </p>
-        <a href="#" className="btn-outline-light">Descobrir a marca</a>
+        <a href="#" className="btn-outline-light">Find your Brand</a>
       </div>
     </section>
   );
