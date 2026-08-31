@@ -121,12 +121,7 @@
   align-items: center;
   overflow: hidden;
 }
-.story-img {
-  position: absolute;
-  inset: 0;
-  width: 55%;
-  background: url('https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=1200') center/cover no-repeat;
-}
+
 .story-content {
   margin-left: 55%;
   color: #fff;

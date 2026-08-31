@@ -1,9 +1,13 @@
 import '../App.css';
+import blushaveludado from '../assets/blushaveludado.jpg';
+import lapisolhosideal from '../assets/lapisolhosideal.jpg';
+import sombrasterrosas from '../assets/sombrasterrosas.jpg';
+
 function Novidades() {
   const produtos = [
-    { name: 'Blush Aveludado' },
-    { name: 'Lápis Olhos Ideal' },
-    { name: 'Sombras Terrosas' },
+    { name: 'Blush Aveludado', img: blushaveludado},
+    { name: 'Lápis Olhos Ideal',img: lapisolhosideal },
+    { name: 'Sombras Terrosas', img: sombrasterrosas},
   ];
 
   return (
@@ -20,7 +24,9 @@ function Novidades() {
         {produtos.map((p) => (
           <div className="col-12 col-md-4" key={p.name}>
             <div className="product-card product-card-lg">
-              <div className="product-img product-img-lg" />
+              <div className="product-img product-img-lg">
+                {p.img && <img src={p.img} alt={p.name} className="product-img-inner" />}
+              </div>
               <p className="product-name">{p.name}</p>
             </div>
           </div>
