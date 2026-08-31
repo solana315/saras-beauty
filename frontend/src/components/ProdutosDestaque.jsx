@@ -1,13 +1,15 @@
 import '../App.css';
 import Base1 from '../assets/Base1.jpg';
 import Paleta1 from '../assets/paleta1.jpg';
+import glowhighlighter from '../assets/glowhighlighter.jpg';
+import serumiluminador from '../assets/serumiluminador.jpg';
 
 function ProdutosDestaque() {
   const produtos = [
     { name: 'Base Perfeita', cat: 'Rosto', img: Base1 },
     { name: 'Paleta Bronze', cat: 'Olhos', img: Paleta1 },
-    { name: 'Glow Highlighter', cat: 'Rosto' },
-    { name: 'Sérum Iluminador', cat: 'Skincare' },
+    { name: 'Glow Highlighter', cat: 'Rosto', img: glowhighlighter },
+    { name: 'Sérum Iluminador', cat: 'Skincare', img: serumiluminador },
   ];
 
   return (
