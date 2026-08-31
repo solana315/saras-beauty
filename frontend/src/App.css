@@ -139,6 +139,7 @@
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 18px;
+  color: white;
 }
 .story-text { font-size: 0.9rem; color: #cfcfcf; margin-bottom: 26px; line-height: 1.6; }
 .btn-outline-light {

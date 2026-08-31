@@ -5,7 +5,7 @@ import ProdutosDestaque from './components/ProdutosDestaque';
 import StoryBanner from './components/StoryBanner';
 import Novidades from './components/Novidades';
 import Tutoriais from './components/Tutoriais';
-import Footer from './components/footer';
+import Footer from "./components/Footer";
 
 function HomePage() {
   return (
