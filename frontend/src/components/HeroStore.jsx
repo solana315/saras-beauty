@@ -1,8 +1,8 @@
 import React from "react";
 import { COLORS } from "../constants/colors";
-import { FILTERS } from "../data/products";
+import { FILTERS } from "./Products";
 
-export default function Hero({ activeFilter, onFilterChange }) {
+export default function HeroStore({ activeFilter, onFilterChange }) {
   return (
     <div
       className="row align-items-end mb-5 pb-4"
