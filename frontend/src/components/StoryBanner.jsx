@@ -1,5 +1,5 @@
 import '../App.css';
-import balsamolabial from '../assets/products/balsamolabial.jpg';
+import balsamolabial from '../assets/balsamolabial.jpg';
 
 function StoryBanner() {
   return (
