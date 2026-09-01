@@ -1,9 +1,8 @@
 import '../App.css';
-import Paleta1 from '../assets/paleta1.jpg';
-import glowhighlighter from '../assets/glowhighlighter.jpg';
-import serumiluminador from '../assets/serumiluminador.jpg';
-import contornocremoso from '../assets/contornocremoso.jpg';
-import cremeolhos from '../assets/cremeolhos.jpg';
+import glowhighlighter from '../assets/products/glowhighlighter.jpg';
+import serumiluminador from '../assets/products/serumiluminador.jpg';
+import contornocremoso from '../assets/products/contornocremoso.jpg';
+import cremeolhos from '../assets/products/cremeolhos.jpg';
 
 function ProdutosDestaque() {
   const produtos = [

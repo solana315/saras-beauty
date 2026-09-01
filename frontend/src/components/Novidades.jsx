@@ -1,7 +1,7 @@
 import '../App.css';
-import blushaveludado from '../assets/blushaveludado.jpg';
-import lapisolhosideal from '../assets/lapisolhosideal.jpg';
-import sombrasterrosas from '../assets/sombrasterrosas.jpg';
+import blushaveludado from '../assets/products/blushaveludado.jpg';
+import lapisolhosideal from '../assets/products/lapisolhosideal.jpg';
+import sombrasterrosas from '../assets/products/sombrasterrosas.jpg';
 
 function Novidades() {
   const produtos = [
