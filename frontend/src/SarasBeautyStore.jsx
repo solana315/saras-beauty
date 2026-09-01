@@ -11,13 +11,13 @@ import Footer from "./components/Footer";
 export default function SarasBeautyStore() {
   useExternalAssets();
 
-  const [activeFilter, setActiveFilter] = useState("TODOS");
+  const [activeFilter, setActiveFilter] = useState("ALL");
   const [cartCount, setCartCount] = useState(0);
 
-  const filtered =
-    activeFilter === "TODOS"
-      ? PRODUCTS
-      : PRODUCTS.filter((p) => p.category.toUpperCase().startsWith(activeFilter));
+const filtered =
+  activeFilter === "ALL" || activeFilter === "ALL"
+    ? PRODUCTS
+    : PRODUCTS.filter((p) => p.category === activeFilter);
 
   return (
     <div

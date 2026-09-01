@@ -71,7 +71,7 @@ export default function Products() {
                 : "bg-transparent text-neutral-800 border-neutral-300 hover:border-neutral-400"
             }`}
           >
-            {filter === "ALL" ? "TODOS" : filter}
+            {filter === "ALL" ? "ALL" : filter}
           </button>
         ))}
       </div>
