@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 // Apanha imagens dentro das subpastas de products
@@ -19,6 +18,42 @@ const categoryMap = {
   cabelo: "HAIR",
 };
 
+const getProductPrice = (category, name) => {
+  const base = {
+    SKIN: 24,
+    EYES: 19,
+    LIPS: 16,
+    "MAKE UP": 22,
+    HAIR: 28,
+  };
+
+  const extra = {
+    "Base": 5,
+    "Bronzer": 4,
+    "Concealer": 3,
+    "Eye": 2,
+    "EyeBrow": 3,
+    "Eyeliner": 2,
+    "Highlighter": 4,
+    "Gloss": 2,
+    "Lip": 3,
+    "Mask": 5,
+    "Oil": 6,
+    "Serum": 7,
+    "Shampoo": 4,
+    "Conditioner": 4,
+    "Cream": 5,
+    "Gel": 4,
+    "Powder": 5,
+  };
+
+  const categoryPrice = base[category] ?? 20;
+  const match = Object.entries(extra).find(([key]) => name.toLowerCase().includes(key.toLowerCase()));
+  const extraValue = match ? match[1] : 0;
+
+  return `${(categoryPrice + extraValue).toFixed(2).replace(".", ",")} €`;
+};
+
 export const PRODUCTS = Object.entries(images)
   .map(([path, img], index) => {
     const parts = path.split("/");
@@ -35,7 +70,7 @@ export const PRODUCTS = Object.entries(images)
       badge: "ESSENCIAL",
       name: fileName,
       category,
-      price: "26,50 €",
+      price: getProductPrice(category, fileName),
       img,
     };
   })
